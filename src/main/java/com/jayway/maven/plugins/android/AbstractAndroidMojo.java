@@ -606,7 +606,7 @@ public abstract class AbstractAndroidMojo extends AbstractMojo
                 try
                 {
                     String result = device.installPackage( apkFile.getAbsolutePath(), true );
-                    if ( device != null )
+                    if ( result != null )
                     {
                         throw new MojoExecutionException( "Install of " + apkFile.getAbsolutePath()
                                 + " failed - [" + result + "]" );
